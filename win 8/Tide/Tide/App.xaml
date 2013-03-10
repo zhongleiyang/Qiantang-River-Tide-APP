@@ -1,0 +1,28 @@
+﻿<Application
+    x:Class="Tide.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tide">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <local:MonthConverter x:Key="monthConverter" />
+            <local:DayConverter x:Key="dayConverter" />
+            <local:MiniteConverter x:Key="miniteConverter" />
+            <local:LevelConverter x:Key="levelConverter" />
+
+            <local:HourConverter x:Key="hourConverter" />
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+
+
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
